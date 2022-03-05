@@ -24,7 +24,8 @@ public class MainActivity<EXTRA_MESSAGE> extends AppCompatActivity {
         EditText editText;
         editText = findViewById(R.id.message);
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message); startActivity(intent);
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
 
     }
 }
